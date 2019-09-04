@@ -1,10 +1,10 @@
 import {useEffect } from 'react';
 import useLocalStorage from './useLocalStorage';
 
-function useDarkMode(key, initalValue){
+function useDarkMode(initalValue){
 
 	// set state to be user input, setting state using a custom hook
-	const [darkMode, setDarkMode] = useLocalStorage(key, initalValue);
+	const [darkMode, setDarkMode] = useLocalStorage("darkMode", initalValue);
 
 	// Setup state monitoring
 	useEffect(() => {

@@ -13,7 +13,10 @@ function useLocalStorage(key, initialValue) {
 
 	// Setter function that we return from our hook to be used.
 	const setValue = value => {
+		// Setting local state to the value passed to setValue
 		setStoredValue(value);
+
+		// storing the value in local storage
 		window.localStorage.setItem(key, JSON.stringify(value));
 	}
 
