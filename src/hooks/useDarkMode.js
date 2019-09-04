@@ -11,7 +11,7 @@ function useDarkMode(key, initalValue){
 		
 		// darkMode === true
 		if(darkMode){
-			const body = document.querySelector.apply('body');
+			const body = document.querySelector('body');
 			body.classList.add('dark-mode');
 		}
 		else {
